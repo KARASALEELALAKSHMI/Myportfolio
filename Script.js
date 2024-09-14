@@ -11,3 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+function toggleDetails(id) {
+    const projectDetails = document.getElementById(id);
+    const isVisible = projectDetails.style.display === 'block';
+    projectDetails.style.display = isVisible ? 'none' : 'block';
+}
+
